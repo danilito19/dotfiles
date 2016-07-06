@@ -10,7 +10,6 @@ alias bp="vim ~/.bash_profile"
 
 # GIT
 alias c-master='git checkout master'
-alias c-master='git checkout master'
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
