@@ -11,12 +11,27 @@ alias bp="vim ~/.bash_profile"
 # GIT
 alias c-master='git checkout master'
 
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 function gcm() {
     git commit -m "$1"
 }
+
+# cd aliases
+alias cddev="cd /dev”
+
+# POSTGRESQL
+# alias pginit="initdb /usr/local/var/postgres -E utf8 -U mike"
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias pgstatus="pg_ctl -D /usr/local/var/postgres status"
+alias pg="psql -h localhost -d postgres"
 
 
 # opens websites
