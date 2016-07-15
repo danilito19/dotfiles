@@ -10,7 +10,7 @@ alias bp="vim ~/.bash_profile"
 
 # GIT
 alias c-master='git checkout master'
-
+alias brr="git branch"
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
