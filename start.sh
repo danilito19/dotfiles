@@ -1,7 +1,7 @@
 ### SCRIPT THAT STARTS NEW MACHINE
 
-cp .bash_profile ~/
-cp -r bin/ ~/
-
+cp -r home/ ~/
+cp -r bin/ ~/bin/
+source ~/.bash_profile
 
 
