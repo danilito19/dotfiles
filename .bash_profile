@@ -44,3 +44,18 @@ export NVM_DIR="/Users/dlitov39/.nvm"
 
 # My scripts
 export PATH="~/dotfiles/bin:$PATH"
+
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+# virtualenv
+source /usr/local/bin/virtualenvwrapper.shexport
+
+# ruby shenanigans
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# Setting PATH for Python 3.5
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
+
