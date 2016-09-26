@@ -1,5 +1,7 @@
 DOTFILES. . . . . 
 
+To get fies from home to ~/ and source bash profile,
+```bash start.sh```
 
 ### Useful programming tools (for data science)
 
