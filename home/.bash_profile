@@ -8,6 +8,10 @@ alias rr="env EXPERIMENTAL_ANALYTICS=1 R"
 # BASH
 alias bp="vim ~/.bash_profile"
 
+# SUBLIME
+export PATH=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export EDITOR='subl -w'
+
 # GIT
 alias c-master='git checkout master'
 alias brr="git branch"
